@@ -1,5 +1,5 @@
 
-# Near Real Time Prediction On Sentiment Of Tweets With Elasticsearch And Kibana
+# Near Real Time Prediction On Sentiment Of Tweets By Injecting Data Into Elasticsearch And Displaying On Kibana
 
 A simple demo of near realtime sentiment analysis on Tweets using Elasticsearch, Kibana and Twitter API in Python 3
 
@@ -8,7 +8,6 @@ Interested in o president Trump's perfomance ten month after his inauguration, I
 The following screenshot is one example of showing poeple's sentiment to president Trump's role in Topics (Twitter Hashtag) on the Kibana dashboard. To access the the animation, please visit the [interaction with the Dashboard](https://www.dropbox.com/s/f8vhacnusdwghgb/RecordDashboard.webm?dl=0)
 
 ![screencapture](/Visualization/screencapture-localhost-5601-app-kibana-without%20Geo.png)
-![screencapture](/visualization/RecordDashboard.gif)
 
 For simplicity, sentiment of Tweets are predicted by ![model](https://textblob.readthedocs.io/en/dev) trained, and the output are injected into the locally installed Elasticsearch.
 
