@@ -130,13 +130,13 @@ if __name__ == '__main__':
    - or change the directory to the unzipped Elasticsearch folder and type *./bin/elasticsearch* to launch<br>
    <br/>
 2. Run the python script<br>
-<br/>
+    <br/>
 3. In a few seconds after the python script starts to run, launch Kibanada by changing the directory to the unzipped Kibana folder and type _./bin/kibana_
     - go to http://localhost:5601, move to __Management__ --> __Index__ -->__+ Create Index Pattern__ to create an index name or pattern
     - check for the ![naming convention](https://www.elastic.co/guide/en/kibana/current/tutorial-define-index) of Kibana index pattern. In this example, the index name in the Python script is __logstash-a__, so I set the naming pattern in as **logstash-***. 'date' is the millisecond since epoch attribute I set in the Python script, so I choose *date* from the drag down box 'Time Filter field name'
     - click 'Create' to create the index pattern
     ![screencapture](/visualization/screencapture-localhost-5601-app-kibana-naming%20pattern%20and%20datetimestamp.png)<br>
-
+    <br/>
 4. To transform the **date** from millisecond to readable datetimestamp, select **+ Add Scripted Field** in **Index Patterns**
     ![screencapture](/visualization/screencapture-localhost-5601-app-kibana-add%20DateTimeStamp.png)<br>
 
