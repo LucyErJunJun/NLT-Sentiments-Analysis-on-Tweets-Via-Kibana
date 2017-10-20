@@ -10,18 +10,18 @@ The following screenshot is one example of showing poeple's sentiment to preside
 <img src="./visualization/screencapture-localhost-5601-app-kibana-without%20Geo.png" width='80%'>
 <img src="./visualization/RecordDashboard.gif" width='80%'>
 
-For simplicity, sentiment of Tweets are predicted by [model](https://textblob.readthedocs.io/en/dev) trained, and the output are injected into the locally installed Elasticsearch.
+For simplicity, sentiment of Tweets are predicted by ![model](https://textblob.readthedocs.io/en/dev) trained, and the output are injected into the locally installed Elasticsearch.
 
 ## Prerequisites
 
 ### Install Elasticsearch
 
-For Mac users who'd like to install manually, please check [How to install Elasticsearch on mac os x](https://chartio.com/resources/tutorials/how-to-install-elasticsearch-on-mac-os-x/)
+For Mac users who'd like to install manually, please check ![How to install Elasticsearch on mac os x](https://chartio.com/resources/tutorials/how-to-install-elasticsearch-on-mac-os-x/)
 You may add the enviroment variable to your bash profile as described in the webpage above or change directory to unzipped file and then, launch Elasticsearch by typing in 'bin/elasticsearch'in Terminal.
 
 ### Install Kibana
 
-To install Kibana to get the "Hot Data" visualized, please check [Hot Data Visualized](https://www.youtube.com/watch?v=psNH33pcGBo)
+To install Kibana to get the "Hot Data" visualized, please check ![Hot Data Visualized](https://www.youtube.com/watch?v=psNH33pcGBo)
 
 ## The Python Script to Pipe Tweets To Elasticsearch With Sentiment Prediction
 
