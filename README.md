@@ -7,7 +7,7 @@ Interested in o president Trump's perfomance ten month after his inauguration, I
 
 The following screenshot is one example of showing poeple's sentiment to president Trump's role in Topics (Twitter Hashtag) on the Kibana dashboard. To access the the animation, please visit the [interaction with the Dashboard](https://www.dropbox.com/s/f8vhacnusdwghgb/RecordDashboard.webm?dl=0)
 
-<img src="./visualization/screencapture-localhost-5601-app-kibana-without%20Geo.png" width='80%'>
+![Static]("./visualization/screencapture-localhost-5601-app-kibana-without%20Geo.png")
 <img src="./visualization/RecordDashboard.gif" width='80%'>
 
 For simplicity, sentiment of Tweets are predicted by ![model](https://textblob.readthedocs.io/en/dev) trained, and the output are injected into the locally installed Elasticsearch.
@@ -133,7 +133,7 @@ if __name__ == '__main__':
 <br/>
 3. In a few seconds after the python script starts to run, launch Kibanada by changing the directory to the unzipped Kibana folder and type *./bin/kibana*
     - go to 'http://localhost:5601', move to **Management**-->**Index-**->**+ Create Index Pattern** to create an index name or pattern
-    - check for the [naming convention]('https://www.elastic.co/guide/en/kibana/current/tutorial-define-index.html') of Kibana index pattern. In this example, the index name in the Python script is **logstash-a**, so I set the naming pattern in as **logstash-***. 'date' is the millisecond since epoch attribute I set in the Python script, so I choose *date* from the drag down box 'Time Filter field name'
+    - check for the ![naming convention]('https://www.elastic.co/guide/en/kibana/current/tutorial-define-index.html') of Kibana index pattern. In this example, the index name in the Python script is **logstash-a**, so I set the naming pattern in as **logstash-***. 'date' is the millisecond since epoch attribute I set in the Python script, so I choose *date* from the drag down box 'Time Filter field name'
     - click 'Create' to create the index pattern
     <img src='./visualization/screencapture-localhost-5601-app-kibana-naming%20pattern%20and%20datetimestamp.png' width='80%'><br>
 
@@ -143,7 +143,7 @@ if __name__ == '__main__':
 5. Select **Language**, **Type**, **Format** as the following graph and add *doc['date'].value* to the field of **script**
     <img src='./visualization/screencapture-localhost-5601-app-kibana-datetime-transform-detail.png' width='80%'><br>
 
-6. See [Kibana User Guide](https://www.elastic.co/guide/en/kibana/current/getting-started.html) about how to build up the customized graphs in 'Visualize' and put them together in **Dashboard**<br>
+6. See ![Kibana User Guide](https://www.elastic.co/guide/en/kibana/current/getting-started.html) about how to build up the customized graphs in 'Visualize' and put them together in **Dashboard**<br>
 <br/>
 
 7. In case that I'd like to clear out the data in the elasticsearch index, run *DELETE /logstash-a* in the console of Dev Tools
