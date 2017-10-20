@@ -131,20 +131,20 @@ if __name__ == '__main__':
    <br/>
 2. Run the python script<br>
 <br/>
-3. In a few seconds after the python script starts to run, launch Kibanada by changing the directory to the unzipped Kibana folder and type *./bin/kibana*
-    - go to 'http://localhost:5601', move to **Management**-->**Index-**->**+ Create Index Pattern** to create an index name or pattern
-    - check for the ![naming convention]('https://www.elastic.co/guide/en/kibana/current/tutorial-define-index.html') of Kibana index pattern. In this example, the index name in the Python script is **logstash-a**, so I set the naming pattern in as **logstash-***. 'date' is the millisecond since epoch attribute I set in the Python script, so I choose *date* from the drag down box 'Time Filter field name'
+3. In a few seconds after the python script starts to run, launch Kibanada by changing the directory to the unzipped Kibana folder and type _./bin/kibana_
+    - go to http://localhost:5601, move to **Management**-->**Index**-->**+ Create Index Pattern** to create an index name or pattern
+    - check for the ![naming convention](https://www.elastic.co/guide/en/kibana/current/tutorial-define-index.html) of Kibana index pattern. In this example, the index name in the Python script is **logstash-a**, so I set the naming pattern in as **logstash-***. 'date' is the millisecond since epoch attribute I set in the Python script, so I choose *date* from the drag down box 'Time Filter field name'
     - click 'Create' to create the index pattern
-    ![screencapture](./visualization/screencapture-localhost-5601-app-kibana-naming%20pattern%20and%20datetimestamp.png)<br>
+    ![screencapture](/visualization/screencapture-localhost-5601-app-kibana-naming%20pattern%20and%20datetimestamp.png)<br>
 
 4. To transform the **date** from millisecond to readable datetimestamp, select **+ Add Scripted Field** in **Index Patterns**
-    ![screencapture](./visualization/screencapture-localhost-5601-app-kibana-add%20DateTimeStamp.png)<br>
+    ![screencapture](/visualization/screencapture-localhost-5601-app-kibana-add%20DateTimeStamp.png)<br>
 
-5. Select **Language**, **Type**, **Format** as the following graph and add *doc['date'].value* to the field of **script**
-    ![screencapture](./visualization/screencapture-localhost-5601-app-kibana-datetime-transform-detail.png)<br>
+5. Select **Language**, **Type**, **Format** as the following graph and add _doc['date'].value_ to the field of **script**
+    ![screencapture](/visualization/screencapture-localhost-5601-app-kibana-datetime-transform-detail.png)<br>
 
-6. See ![Kibana User Guide](https://www.elastic.co/guide/en/kibana/current/getting-started.html) about how to build up the customized graphs in 'Visualize' and put them together in **Dashboard**<br>
+6. See ![Kibana User Guide](https://www.elastic.co/guide/en/kibana/current/getting-started) about how to build up the customized graphs in 'Visualize' and put them together in **Dashboard**<br>
 <br/>
 
-7. In case that I'd like to clear out the data in the elasticsearch index, run *DELETE /logstash-a* in the console of Dev Tools
-     ![screencapture](./visualization/screencapture-localhost-5601-app-kibana-clear%20out%20data.png)
+7. In case that I'd like to clear out the data in the elasticsearch index, run _DELETE /logstash-a_ in the console of Dev Tools
+     ![screencapture](/visualization/screencapture-localhost-5601-app-kibana-clear%20out%20data.png)
