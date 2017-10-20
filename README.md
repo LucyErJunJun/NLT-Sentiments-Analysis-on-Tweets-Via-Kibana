@@ -8,7 +8,7 @@ Interested in o president Trump's perfomance ten month after his inauguration, I
 The following screenshot is one example of showing poeple's sentiment to president Trump's role in Topics (Twitter Hashtag) on the Kibana dashboard. To access the the animation, please visit the [interaction with the Dashboard](https://www.dropbox.com/s/f8vhacnusdwghgb/RecordDashboard.webm?dl=0)
 
 ![screencapture](/Visualization/screencapture-localhost-5601-app-kibana-without%20Geo.png)
-<img src="./visualization/RecordDashboard.gif" width='80%'>
+![screencapture](/visualization/RecordDashboard.gif)
 
 For simplicity, sentiment of Tweets are predicted by ![model](https://textblob.readthedocs.io/en/dev) trained, and the output are injected into the locally installed Elasticsearch.
 
