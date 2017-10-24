@@ -3,7 +3,7 @@
 
 A simple demo of near realtime sentiment analysis on Tweets using Elasticsearch, Kibana and Twitter API in Python 3
 
-Interested in o president Trump's perfomance ten month after his inauguration, I use Twitter public stream to analyze people's sentiment on topics mentioned his name in a near rea-time way. In this demo, I will show how to pipe data from Twitter, predict the sentiment with Textblob, inject **Hot Data** to ElasticSeach using Twitter APIs and, finally, present the output on Kibana Dashboard.
+Interested in president Trump's perfomance ten month after his inauguration, I use Twitter public stream to analyze people's sentiment on topics mentioned his name in a near rea-time way. In this demo, I will show how to pipe data from Twitter, predict the sentiment with Textblob, inject **Hot Data** to ElasticSeach using Twitter APIs and, finally, present the output on Kibana Dashboard.
 
 The following screenshot is one example of showing poeple's sentiment to president Trump's role in Topics (Twitter Hashtag) on the Kibana dashboard. To access the the animation, please visit the [interaction with the Dashboard](https://www.dropbox.com/s/f8vhacnusdwghgb/RecordDashboard.webm?dl=0)
 
